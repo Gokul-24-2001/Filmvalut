@@ -6,7 +6,6 @@ export default function Navbar(){
             <h5><MdMovieCreation ></MdMovieCreation></h5> 
             <Link className="text-decoration-none" to="/"><h5>Home</h5></Link>
             <Link className="text-decoration-none" to="/watchlist"><h5>watchlist</h5></Link>
-            <Link className="text-decoration-none" to="/login"><h5>login</h5></Link>
         </div>
     )
 }

@@ -1,0 +1,14 @@
+.table_movie_name{
+    color:red;
+    position: relative;
+   top:-60px;
+   left:180px;
+}
+.action{
+    border:1px solid red;
+    border:none;
+    height: 35px;
+    width:100px;
+    border-radius: .1cm;
+    background-color: rgb(81, 144, 206) ;
+}

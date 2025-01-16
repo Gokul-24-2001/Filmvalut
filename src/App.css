@@ -1,0 +1,33 @@
+.App{
+   margin:0;
+   padding: 0;
+}
+.bg-color{
+   background-color:rgb(143, 143, 143);
+   opacity: .8
+}
+.card2{
+   height:250px; 
+   width:200px;
+   position: relative;
+border:1px solid black;
+border-radius: .20cm;
+border:none;
+}
+.card1:hover{
+  
+   cursor: pointer;
+   transform: scale(1.1);
+}
+.movie{
+  background-color: rgb(51, 50, 50);
+  width: 100%;
+ opacity: .8;
+ position: absolute;
+ bottom: 0px;
+ padding: 4px 5px;   /* padding: 9px(topbottpm) 10px (left,right)*/
+ box-sizing: border-box;
+ text-align: center;
+ color: white;
+}
+

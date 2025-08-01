@@ -15,7 +15,7 @@ function App() {
   }
    const Removewatchlist=(movie)=>{
   const Removelist=watchlist.filter((watchlistitem,index)=>{
-    return watchlistitem.id!=movie.id
+    return watchlistitem.id!==movie.id
   }
   )
   setWatchlist(Removelist);

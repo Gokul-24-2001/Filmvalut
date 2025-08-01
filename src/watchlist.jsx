@@ -88,15 +88,15 @@ console.log(genre)
           
       {watchlist.filter((movieobj)=>{
       
-        if(currentgenre=='All generes'){
+        if(currentgenre==='All generes'){
            return true;
         }
         else{
-          return genereids[movieobj.genre_ids[0]]==currentgenre;
+          return genereids[movieobj.genre_ids[0]]===currentgenre;
         }
       }).
 filter((movobj)=>{
-  return search==""?movobj:movobj.original_title.toLowerCase().includes(search)})
+  return search===""?movobj:movobj.original_title.toLowerCase().includes(search)})
   .map((item)=>{
         return(
           

@@ -50,7 +50,7 @@ console.log(genre)
       
         <div className="d-flex justify-content-center mt-4">
            {genre.map((genre)=>{
-            return <div onClick={()=>{handlegenre(genre)}} className={currentgenre==genre?"action mx-3 text-dark text-center d-flex justify-content-center":"action bg-secondary mx-3 text-dark text-center d-flex justify-content-center"}>{genre}</div>
+            return <div onClick={()=>{handlegenre(genre)}} className={currentgenre===genre?"action mx-3 text-dark text-center d-flex justify-content-center":"action bg-secondary mx-3 text-dark text-center d-flex justify-content-center"}>{genre}</div>
            })
            } 
             {/* <div className="action mx-3 d-flex justify-content-center">action</div> */}
@@ -94,7 +94,7 @@ console.log(genre)
         else{
           return genereids[movieobj.genre_ids[0]]===currentgenre;
         }
-      }).
+      })
 filter((movobj)=>{
   return search===""?movobj:movobj.original_title.toLowerCase().includes(search)})
   .map((item)=>{
@@ -102,10 +102,10 @@ filter((movobj)=>{
           
           <tr key={item.id}>    
             <td className="py-2">
-          <img src={`https://image.tmdb.org/t/p/w500${item.poster_path}` }
+          <img src={`https://image.tmdb.org/t/p/w500${item.poster_path}`}
             height="150px"
             width="200px"
-            alt="adding image"
+            alt="addingimage"
           />
           <div className="table_movie_name"> {item.original_title}</div>
         </td>

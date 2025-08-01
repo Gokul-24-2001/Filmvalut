@@ -16,7 +16,7 @@ export default function Movies({watchlist,Addmovietowatchlist,Removewatchlist}) 
       .then((res) => setMovies(res.data.results));
   }, [pageno]);
 const handleprev=()=>{
-  if(pageno==1){
+  if(pageno===1){
     setPageno(1);
   }
   else{
